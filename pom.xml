@@ -8,6 +8,7 @@
 	<modules>
 		<module>netty-action-rpc</module>
 		<module>netty-action-websocket</module>
+		<module>netty-action-disruptor</module>
 	</modules>
 
 	<properties>
