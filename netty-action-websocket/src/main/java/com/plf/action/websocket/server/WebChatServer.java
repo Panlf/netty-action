@@ -8,6 +8,8 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 
 public class WebChatServer {
 
@@ -30,6 +32,7 @@ public class WebChatServer {
 			bootstrap.group(boss, worker)
 					.channel(NioServerSocketChannel.class)
 					.childHandler(new WebChatServerInitializer())
+					.handler(new LoggingHandler(LogLevel.DEBUG))
 					.option(ChannelOption.SO_BACKLOG, 1024)
 					.childOption(ChannelOption.SO_KEEPALIVE, true);
 		
