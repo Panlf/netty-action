@@ -27,15 +27,11 @@ public class NettyRpcServerHandler extends ChannelHandlerAdapter{
 			
 			Class<?> clazz = Class.forName(newClassName);
 			
-			Object bean = clazz.newInstance();
-			
+			Object bean = clazz.getDeclaredConstructor().newInstance();
 			Method method = clazz.getDeclaredMethod(methodName, paramerTypes);
 			
 			Object result = method.invoke(bean, paramsValues);
-			
-			
 			ctx.writeAndFlush(result);
-			
 			ctx.close();
 		}
 	}
