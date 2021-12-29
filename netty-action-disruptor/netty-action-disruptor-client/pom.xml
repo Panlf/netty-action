@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.plf.action</groupId>
     <artifactId>netty-action-disruptor</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>netty-action-disruptor-client</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.plf.action</groupId>
   		<artifactId>netty-action-disruptor-common</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
+  		<version>1.0.0</version>
   	</dependency>
   </dependencies>
 </project>

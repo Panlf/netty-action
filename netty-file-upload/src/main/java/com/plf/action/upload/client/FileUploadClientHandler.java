@@ -41,7 +41,6 @@ public class FileUploadClientHandler extends ChannelHandlerAdapter{
             }else{
                 System.out.println("文件已经读完");
             }
-
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -68,6 +67,7 @@ public class FileUploadClientHandler extends ChannelHandlerAdapter{
                     uploadFile.setBytes(bytes);
                     ctx.writeAndFlush(uploadFile);
                 }else {
+                    ctx.writeAndFlush("");
                     randomAccessFile.close();
                     ctx.close();
                     System.out.println("文件已经读完 ===> " + byteRead);

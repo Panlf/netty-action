@@ -18,6 +18,5 @@ public abstract class MessageConsumer implements WorkHandler<TranslatorDataWappe
 	public void setConsumerId(String consumerId) {
 		this.consumerId = consumerId;
 	}
-	
-	
+
 }

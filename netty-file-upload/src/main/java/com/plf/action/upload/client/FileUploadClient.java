@@ -50,7 +50,7 @@ public class FileUploadClient {
         }
         try {
             UploadFile uploadFile = new UploadFile();
-            File file = new File("D:\\TempData\\1.txt");
+            File file = new File("D:\\BaiduNetdiskDownload\\1.zip");
             String fileMd5 = file.getName();// 文件名
             uploadFile.setFile(file);
             uploadFile.setFileMd5(fileMd5);
