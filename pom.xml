@@ -11,7 +11,8 @@
 		<module>netty-action-disruptor</module>
 		<module>netty-file-upload</module>
         <module>netty-boot-websocket</module>
-    </modules>
+		<module>netty-http-web</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
