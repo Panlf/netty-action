@@ -12,6 +12,7 @@
 		<module>netty-file-upload</module>
         <module>netty-boot-websocket</module>
 		<module>netty-http-web</module>
+		<module>netty-binary</module>
 	</modules>
 
 	<properties>
